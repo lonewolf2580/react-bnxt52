@@ -3,6 +3,7 @@ const TableHeader = () => {
   return (
     <thead>
       <tr>
+        <th>S/N</th>
         <th>Name</th>
         <th>Job</th>
       </tr>
@@ -14,6 +15,7 @@ const TableBody = (props) => {
   const rows = props.characterData.map((row, index) => {
     return (
       <tr key={index}>
+        <td>{index + 1}</td>
         <td>{row.name}</td>
         <td>{row.job}</td>
       </tr>
